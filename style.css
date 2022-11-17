@@ -25,11 +25,11 @@ header h1 {
 .nav{
     background-color: #5473b4;
 }
-.nav ul {
+.mainmenu {
     list-style: none;
 
 }
-.nav ul li {
+.mmelement {
     display: inline-block;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -39,9 +39,32 @@ header h1 {
     font-size: 18px;
     text-transform: uppercase;
 }
-.nav ul li a {
+.mainmenu li a {
     text-decoration: none;
     color: white;
+}
+.submenu {
+	display: none;
+    position: absolute;
+    list-style: none;
+	z-index: 100;
+    padding-top: 25px;
+    margin-left: 20px;
+}
+.submenu li a {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+.mainmenu li:hover > .submenu {
+    display: block;
+    background-color: #5473b4;
+    text-align: center;
+}
+.nav a:hover {
+    color: black;
 }
 .content {
     background-color: #DDDDDD;
