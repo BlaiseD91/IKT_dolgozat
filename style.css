@@ -33,7 +33,7 @@ header h1 {
     display: inline-block;
     padding-top: 25px;
     padding-bottom: 25px;
-    border: solid 1px black;
+    /*border: solid 1px black;*/
     width: 19.5%;
     text-align: center;
     font-size: 18px;
@@ -46,20 +46,44 @@ header h1 {
 .content {
     background-color: #DDDDDD;
 }
+.row {
+    display: inline-block;
+    margin-top: -1px;
+}
 .box1 {
     padding: 10px 20px;
+    max-width: 50%;
+    float: right;
+
 }
 .box2 {
     padding: 10px 20px;
+    max-width: 50%;
+
 }
 img.bal {
     float: left;
-    max-width: 49.9999%;
-    margin-right: 10px;
+    max-width: 50%;
 }
 img.jobb {
     float: right;
-    max-width: 49.9999%;
+    max-width: 50%;
+}
+p {
+    line-height: 20pt;
+    padding-top: 20px;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+img.bal::after img.jobb::after .box1 {
+    content: '';
+    clear: both;
+    display: table;
 }
 
 @media (max-width: 800px) {
