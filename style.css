@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: auto 0;
+    background-color: #bac5dd;
+}
+header {
+    background-image: url(img/picture1.jpg);
+}
+
