@@ -30,11 +30,11 @@ header h1 {
 }
 .nav ul li {
     display: inline-block;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /*border: solid 1px black;*/
     width: 259px;
+    text-align: center;
 }
 .nav ul li a {
     text-decoration: none;
@@ -45,11 +45,20 @@ header h1 {
 .content {
     background-color: #DDDDDD;
 }
+.box1 {
+    padding: 10px 20px;
+}
+.box2 {
+    padding: 10px 20px;
+}
 img.bal {
     float: left;
+    max-width: 49.9999%;
+    margin-right: 10px;
 }
 img.jobb {
     float: right;
+    max-width: 49.9999%;
 }
 
 
